@@ -5,5 +5,5 @@ Please keep in mind that we have [guidelines and best practices](https://treasur
 
 |Parameter|Value||
 |-|-|-|
-|DEV_PR|branch |branch name|
+|DEV_PR|BRANCH |branch name|
 |TEST_ENV|Preview url |url|
