@@ -2,9 +2,21 @@ version: 2
 
 jobs:
   checkout:
+    working_directory: ~/td-qa
+    steps:
+      - run: echo checkout 
   build:
+    working_directory: ~/td-qa
+    steps:
+      - run: echo build 
   deploy-master:
+    working_directory: ~/td-qa
+    steps:
+      - run: echo deploy-master 
   deploy-dev:
+    working_directory: ~/td-qa
+    steps:
+      - run: echo deploy-dev 
    
 workflows:
   version: 2
