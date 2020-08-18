@@ -3,18 +3,26 @@ version: 2
 jobs:
   checkout:
     working_directory: ~/td-qa
+    docker:
+      - image: circleci/python:3.9-rc
     steps:
       - run: echo checkout 
   build:
     working_directory: ~/td-qa
+    docker:
+      - image: circleci/python:3.9-rc
     steps:
       - run: echo build 
   deploy-master:
     working_directory: ~/td-qa
+    docker:
+      - image: circleci/python:3.9-rc
     steps:
       - run: echo deploy-master 
   deploy-dev:
     working_directory: ~/td-qa
+    docker:
+      - image: circleci/python:3.9-rc
     steps:
       - run: echo deploy-dev 
    
