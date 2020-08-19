@@ -24,7 +24,7 @@ jobs:
     docker:
       - image: circleci/python:3.9-rc
     steps:
-      - run: echo deploy-dev 
+      - run: echo deploy-dev
    
 workflows:
   version: 2
