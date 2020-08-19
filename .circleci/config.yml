@@ -39,4 +39,4 @@ workflows:
             branches:
               ignore:
                 - master
-                - /hotfix-.*/
+                
