@@ -24,8 +24,15 @@ jobs:
     docker:
       - image: circleci/python:3.9-rc
     steps:
-      - run: echo deploy-dev
-   
+      - slack/notify:
+          message: |
+            Please check and approve Job to deploy.
+            https://circleci.com/workflow-run/${CIRCLE_WORKFLOW_ID}
+      - expiration/set:
+          ttl: 100
+orbs:
+  expiration: azihsoyn/job-expiration@0.1.0
+  
 workflows:
   version: 2
   test-build-deploy:
